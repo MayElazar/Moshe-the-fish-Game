@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<games>
+  <!-- העץ הראשי המכיל את כל המשחקים -->
+  <idCounter>3</idCounter>
+  <game GameCode="103" published="False" saved="yes">
+    <gameName>12313213</gameName>
+    <Topic>2121321312</Topic>
+    <answerCounter>6</answerCounter>
+    <FBtoPlayer>%d7%9b%d7%9c+%d7%94%d7%9b%d7%91%d7%95%d7%93!+%d7%a1%d7%99%d7%99%d7%9e%d7%aa+%d7%9c%d7%94%d7%90%d7%9b%d7%99%d7%9c+%d7%90%d7%aa+%d7%9e%d7%a9%d7%94+%d7%94%d7%93%d7%92!</FBtoPlayer>
+    <Answers>
+      <answer ansId="6" isCorrect="false" ansType="image">14_01_21-16_27_57.jpg</answer>
+      <answer ansId="5" isCorrect="true" ansType="image">14_01_21-16_27_39.jpg</answer>
+      <answer ansId="4" isCorrect="true" ansType="image">14_01_21-16_27_30.jpg</answer>
+      <answer ansId="3" isCorrect="true" ansType="image">14_01_21-16_27_18.jpg</answer>
+      <answer ansId="2" isCorrect="false" ansType="image">14_01_21-16_27_04.jpeg</answer>
+      <answer ansId="1" isCorrect="false" ansType="image">14_01_21-16_26_46.jpg</answer>
+    </Answers>
+  </game>
+  <game GameCode="102" published="true" saved="yes">
+    <gameName>המצאות </gameName>
+    <Topic>המצאות המאה ה-19</Topic>
+    <answerCounter>20</answerCounter>
+    <FBtoPlayer>%d7%9b%d7%9c+%d7%94%d7%9b%d7%91%d7%95%d7%93!+%d7%a1%d7%99%d7%99%d7%9e%d7%aa+%d7%9c%d7%94%d7%90%d7%9b%d7%99%d7%9c+%d7%90%d7%aa+%d7%9e%d7%a9%d7%94+%d7%94%d7%93%d7%92!</FBtoPlayer>
+    <Answers>
+      <answer ansId="20" isCorrect="false" ansType="image">21_07_20-11_48_10.jpg</answer>
+      <answer ansId="19" isCorrect="false" ansType="image">21_07_20-11_48_04.jpg</answer>
+      <answer ansId="18" isCorrect="false" ansType="image">21_07_20-11_47_56.jpg</answer>
+      <answer ansId="17" isCorrect="false" ansType="image">21_07_20-11_47_46.jpg</answer>
+      <answer ansId="16" isCorrect="true" ansType="image">21_07_20-11_47_38.png</answer>
+      <answer ansId="15" isCorrect="true" ansType="image">21_07_20-11_47_31.jpg</answer>
+      <answer ansId="14" isCorrect="true" ansType="image">21_07_20-11_47_22.jpg</answer>
+      <answer ansId="13" isCorrect="true" ansType="image">21_07_20-11_47_11.jpg</answer>
+      <answer ansId="12" isCorrect="true" ansType="image">21_07_20-11_47_04.jpg</answer>
+      <answer ansId="11" isCorrect="false" ansType="text">קוצב לב</answer>
+      <answer ansId="10" isCorrect="false" ansType="text">טרנזיסטור</answer>
+      <answer ansId="9" isCorrect="false" ansType="text">טפטפת</answer>
+      <answer ansId="8" isCorrect="false" ansType="text">מעבורת חלל</answer>
+      <answer ansId="7" isCorrect="false" ansType="text">טנק</answer>
+      <answer ansId="6" isCorrect="false" ansType="text">כור גרעיני</answer>
+      <answer ansId="5" isCorrect="true" ansType="text">הנול של ז'אקר</answer>
+      <answer ansId="4" isCorrect="true" ansType="text">כתב ברייל</answer>
+      <answer ansId="3" isCorrect="true" ansType="text">דרוויצר גליידר</answer>
+      <answer ansId="2" isCorrect="true" ansType="text">מודל תלת מימדי בכל גודל המציג נושא בסביבתו הטבעית</answer>
+      <answer ansId="1" isCorrect="true" ansType="text">שיטת דיואי</answer>
+    </Answers>
+  </game>
+  <game GameCode="101" published="true" saved="yes">
+    <gameName>מדינות בארופה</gameName>
+    <Topic>דגלי מדינות אירופה</Topic>
+    <answerCounter>20</answerCounter>
+    <FBtoPlayer>%d7%9b%d7%9c+%d7%94%d7%9b%d7%91%d7%95%d7%93!+%d7%a1%d7%99%d7%99%d7%9e%d7%aa+%d7%9c%d7%94%d7%90%d7%9b%d7%99%d7%9c+%d7%90%d7%aa+%d7%9e%d7%a9%d7%94+%d7%94%d7%93%d7%92!</FBtoPlayer>
+    <Answers>
+      <answer ansId="20" isCorrect="false" ansType="image">21_07_20-11_42_06.png</answer>
+      <answer ansId="19" isCorrect="false" ansType="image">21_07_20-11_42_00.png</answer>
+      <answer ansId="18" isCorrect="false" ansType="image">21_07_20-11_41_51.png</answer>
+      <answer ansId="17" isCorrect="false" ansType="image">21_07_20-11_41_45.png</answer>
+      <answer ansId="16" isCorrect="false" ansType="image">21_07_20-11_41_39.png</answer>
+      <answer ansId="15" isCorrect="true" ansType="image">21_07_20-11_41_30.png</answer>
+      <answer ansId="14" isCorrect="true" ansType="image">21_07_20-11_41_25.png</answer>
+      <answer ansId="13" isCorrect="true" ansType="image">21_07_20-11_41_17.png</answer>
+      <answer ansId="12" isCorrect="true" ansType="image">21_07_20-11_41_11.png</answer>
+      <answer ansId="11" isCorrect="true" ansType="image">21_07_20-11_41_00.png</answer>
+      <answer ansId="10" isCorrect="false" ansType="text">סנט וינסנט והגרנדינים</answer>
+      <answer ansId="9" isCorrect="false" ansType="text">ניו המפשייר</answer>
+      <answer ansId="8" isCorrect="false" ansType="text">אקוודור</answer>
+      <answer ansId="7" isCorrect="false" ansType="text">הודו</answer>
+      <answer ansId="6" isCorrect="false" ansType="text">מדינת איים המורכבות מ7641 איים  השוכנת באוקיינוס </answer>
+      <answer ansId="5" isCorrect="true" ansType="text">שבדיה</answer>
+      <answer ansId="4" isCorrect="true" ansType="text">פולין</answer>
+      <answer ansId="3" isCorrect="true" ansType="text">יוון</answer>
+      <answer ansId="2" isCorrect="true" ansType="text">בריטניה</answer>
+      <answer ansId="1" isCorrect="true" ansType="text">איטליה</answer>
+    </Answers>
+  </game>
+</games>

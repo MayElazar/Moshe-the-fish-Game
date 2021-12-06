@@ -1,0 +1,1829 @@
+﻿/*עיצוב התבנית של המשחק*/
+/*body {
+    background-color: #C1EDFF;
+    background-color: white;
+    font-family: 'Assistant', sans-serif;
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    padding-right: 40px;
+    התאמה של הדף לכל גודל
+    width: 1280px;
+    margin: 0 auto;
+    height:100%;
+}*/
+
+.LBL {
+    margin-bottom: auto;
+}
+
+#content {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.editorPages {
+    background-color: white;
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    padding-right: 40px;
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    background-image: url(../editorImages/maxSit-02.png);
+    background-repeat: no-repeat;
+    background-size: 570px;
+    background-position: center;
+    background-position-x: 35px;
+    background-position-y: 341px;
+}
+
+#tablePage {
+    background-color: white;
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    padding-right: 40px;
+    /*התאמה של הדף לכל גודל*/
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#theGamePage {
+    background-color: white;
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    /*התאמה של הדף לכל גודל*/
+    /*width: 1280px;*/
+    margin: 0 auto;
+}
+
+/*.menu {
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+}*/
+a {
+    text-decoration: underline; color:black;
+}
+/*.fotter {
+    background-image: url('../editorImages/rock.png');
+    background-size: 100% 100%;
+    width: 100%;
+    height:100px;
+    display:block;
+}*/
+/*#rock {
+    height: 70px;
+    margin-bottom: 0px;
+}*/
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 93vh;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background-color: #66CCFF;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    direction: rtl;
+    display: block;
+    direction: rtl;
+    z-index: 3;
+    /*margin-bottom: 58px;*/
+    margin-bottom: 17px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+
+    /*כותרת משחק*/
+    header > a > p {
+        font-size: 12pt;
+        font-weight: 600;
+        position: relative;
+        top: -10px;
+        color: black;
+        display: inline-block;
+        direction: rtl;
+    
+    }
+
+/*לוגו*/
+#logo {
+    width: 58px;
+    height: 43px;
+    padding: 5px 15px;
+    direction: rtl;
+}
+
+nav {
+    margin-top: -70px;
+    margin-left: 10px;
+    direction: rtl;
+}
+
+    nav ul {
+        list-style: none;
+        direction: rtl;
+    }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            direction: rtl;
+        }
+
+            nav ul li a {
+                display: block;
+                color: darkslategray;
+                text-align: center;
+                padding: 3px 10px;
+                font-weight: 400;
+                font-size: 12pt;
+                direction: rtl;
+                text-decoration: none;
+                font-family: 'Rubik', sans-serif;
+                margin-top: 10px;
+            }
+
+                nav ul li a:hover {
+                    font-weight: 600;
+                    cursor: pointer;
+                    direction: rtl;
+                    text-decoration: none;
+                }
+
+
+.closeThePopUp {
+    width: 27px;
+    float: right;
+}
+.popUpMenu {
+    background-color: white;
+    width: 400px;
+    position: fixed;
+    top: 60px;
+    z-index: 4;
+    text-align: center;
+    width: 700px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 25px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    direction: rtl;
+    border: 1px solid black;
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+}
+.hitLogo {
+    width: 175px;
+}
+.howTo {
+    width: 687px;
+}
+#aboutDiv {
+    background-image: url('../editorImages/bg.png');
+    background-repeat: no-repeat;
+    background-size: 760px;
+    height: 540px;
+    width: 762px;
+    background-position-x: -5px;
+    padding-top: 21px;
+}
+
+.theGamePage {
+    /*/background-color: white;
+    / direction: rtl;*/
+    font-family: 'Rubik', sans-serif;
+    /*/התאמה של הדף לכל גודל// /width: 1280px;*/
+     margin: 0 auto;
+    background-image: url('../editorImages/bgGame.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -105px;
+}
+
+    .theGamePage header {
+        margin-bottom: 0px;
+    }
+/*--------------------------------------------------------*/
+.icons {
+    width: 30px;
+    outline: none;
+}
+
+.iconTick {
+    width: 33px;
+    outline: none;
+}
+
+.iconnX {
+    width: 30px;
+    outline: none;
+    margin-left: 8px;
+}
+
+.info {
+    height: 15px;
+    position: absolute;
+    margin-right: 7px;
+}
+/*--------------דף התחברות--------------------------------*/
+#loginBody {
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    padding-right: 40px;
+    width: 1280px;
+    margin: 0 auto;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: #C1EDFF;*/
+    background-color: white;
+    /*font-family: 'Assistant', sans-serif;*/
+    direction: rtl;
+}
+
+
+#loginPageLayOut {
+    border-radius: 70px 70px 70px 70px;
+    -moz-border-radius: 70px 70px 70px 70px;
+    -webkit-border-radius: 70px 70px 70px 70px;
+    border: 6px solid #8FAADC;
+    text-align: right;
+    width: 540px;
+    height: 434px;
+    margin: 0 auto;
+    padding-top: 111px;
+    margin-bottom: 21px;
+}
+
+#loginField {
+    margin: 0 auto;
+    margin-right: 57px;
+    margin-top: 23px;
+    
+}
+
+.loginTB {
+    display: block;
+}
+
+#loginBtn {
+    width: 100px;
+    height: 25px;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    font-weight: bold;
+    border: none;
+    background-color: #11C1BD;
+    color: white;
+    background-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+    #loginBtn:disabled {
+        width: 100px;
+        border-radius: 6px 6px 6px 6px;
+        -moz-border-radius: 6px 6px 6px 6px;
+        -webkit-border-radius: 6px 6px 6px 6px;
+        border-radius: 6px;
+        font-weight: bold;
+        background-color: #11C1BD;
+        color: white;
+        cursor: not-allowed;
+        opacity: 0.4;
+        outline: none;
+    }
+
+    #loginBtn:active {
+        color: white;
+        background-color: #11C1BD;
+        -webkit-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        -moz-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        border-radius: 6px;
+        box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        cursor: pointer;
+        outline: none;
+    }
+
+    #loginBtn:enabled:hover {
+        color: #11C1BD;
+        border-color: #11C1BD;
+        border-width: 2px;
+        border-style: solid;
+        background-color: white;
+        -webkit-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        -moz-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        border-radius: 6px;
+        cursor: pointer;
+        outline: none;
+    }
+
+#connectLbl {
+    margin-right: 54px;
+    padding-top: 15px;
+    font-size: 26pt;
+    font-weight: bold;
+}
+
+/*.loginImg {
+    float: left;
+    margin-left: 382px;
+  
+}*/
+
+.loginPic {
+    visibility: visible;
+    margin-top: 26px;
+    margin-right: 577px;
+    position: absolute;
+}
+
+.wrongFBKPic {
+    /*visibility: visible;
+    margin-top: 121px;
+    /*float: left;*/
+    margin-left: 382px;
+    position: absolute;*/
+    visibility: visible;
+    margin-top: 9px;
+    margin-right: 577px;
+    position: absolute;
+}
+
+#loginDetails{
+    color:lightslategray;
+    font-size:smaller;
+}
+/*--------------דף טבלת המשחקים--------------------------------*/
+#noGamesName {
+    font-weight: bold;
+    background-color: #66CCFF;
+    color: white;
+    vertical-align: middle;
+    align-items: center;
+    width: 100px;
+    border: 1px solid #ffffff;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 16px;
+}
+
+#noGamesCode {
+    font-weight: bold;
+    background-color: #66CCFF;
+    color: white;
+    vertical-align: middle;
+    align-items: center;
+    width: 100px;
+    border: 1px solid #ffffff;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 16px;
+}
+#noGamesEdit {
+    font-weight: bold;
+    background-color: #66CCFF;
+    color: white;
+    vertical-align: middle;
+    align-items: center;
+    width: 100px;
+    border: 1px solid #ffffff;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 16px;
+}
+#noGamesDel {
+    font-weight: bold;
+    background-color: #66CCFF;
+    color: white;
+    vertical-align: middle;
+    align-items: center;
+    width: 100px;
+    border: 1px solid #ffffff;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 16px;
+}
+
+#noGamesPub {
+    font-weight: bold;
+    background-color: #66CCFF;
+    color: white;
+    vertical-align: middle;
+    align-items: center;
+    width: 100px;
+    border: 1px solid #ffffff;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 16px;
+}
+
+#gameTablePage {
+    margin-right: 233px;
+}
+
+#GridView1 {
+    border: solid;
+    border-color: white;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    align-content: center;
+    text-align: center;
+    position: center;
+    /*margin-right:400px;*/
+}
+
+
+#GridView1 th {
+    vertical-align: middle;
+    align-items: center;
+    width: 100px;
+    border: 3px solid #ffffff;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+    #GridView1 th:first-child {
+        width: 300px;
+    }
+
+    #GridView1 td {
+        vertical-align: middle;
+        align-items: center;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 3px solid #ffffff;
+        align-content: center;
+        text-align: center;
+       
+    }
+
+        #GridView1 td:first-child{
+            text-align:right;
+        }
+
+        #GridView1 tr {
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+        }
+        /*לצק בוקס בטבלת המשחקים*/
+        .cbChangeGrayNoPublish {
+            -webkit-appearance: none;
+            background-color: #f7f7f7;
+            border: 1.5px solid #E1E4E5;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+
+.cbChangeGreen {
+    -webkit-appearance: none;
+    background-color: #f7f7f7;
+    border: 1.5px solid #2cb519;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    width: 20px;
+    height: 15px;
+    margin-bottom: -4px;
+    margin: auto;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+.cbChangeGreen input[type="checkbox"]:checked {
+    background-size: auto;
+    background-image: url('../editorImages/tickGameTb.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin-bottom: -4px;
+}
+
+/*#addGame{
+    display:block;
+}*/
+#addGameBTN {
+    display: block;
+    margin-top: 29px;
+    /*width: 100px;
+    height: 25px;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    font-weight: bold;
+    border: none;
+    background-color: #0A716F;
+    color: white;
+    background-size: 20px;
+    cursor: pointer;
+    display: block;
+    
+    outline: none;*/
+}
+
+
+/*#addGameBTN:hover {
+    border-width: 2px;
+    border-style: solid;
+   
+    -webkit-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+    -moz-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+    box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin-top: 29px;
+    outline: none;
+}
+
+#addGameBTN:active {
+    border: none;
+    display: block;
+    margin-top: 29px;
+    outline: none;
+}*/
+
+
+
+#noGames {
+    width: 812px;
+}
+
+#headLine {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+#GridView1 {
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+}
+/*--------------פונטים--------------------------------*/
+/*תיבות טקסט*/
+input[type="text"] {
+    font-family: 'Rubik', sans-serif;
+}
+
+.buttons {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    font-weight: bold;
+    background-color: #0A716F;
+    color: white;
+    background-size: 20px;
+    cursor: pointer;
+    /*display: block;*/
+    margin-top: 29px;
+    outline: none;
+    height: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+    .buttons:disabled {
+        background-color: #0A716F;
+        color: white;
+        cursor: not-allowed;
+        opacity: 0.4;
+        outline: none;
+        height: 25px;
+    }
+
+    .buttons:enabled:hover {
+        
+        
+        -webkit-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        -moz-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        cursor: pointer;
+        outline: none;
+        height: 25px;
+        /*padding-right: 15px;
+        padding-left: 15px;*/
+    }
+
+    .buttons:active {
+        
+        -webkit-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        -moz-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        cursor: pointer;
+        outline: none;
+        height: 25px;
+    }
+
+
+.importantBTN {
+    border-style: solid;
+    border-color: #0A716F;
+    border-width: medium;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    font-weight: bold;
+    background-color: white;
+    color: #0A716F;
+    background-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin-top: 29px;
+    outline: none;
+    height: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+  
+}
+
+.importantBTN:enabled:hover {
+    /*padding-right: 15px;
+    padding-left: 15px;*/
+    -webkit-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+    -moz-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+    box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+    cursor: pointer;
+    outline: none;
+}
+
+/*--------------פופ אפים--------------------------------*/
+/*הגדרות לחלון האפור*/
+.grayWindows {
+    background-color: rgba(128, 128, 128,0.5) ;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.wrongFileGray {
+    background-color: rgba(128, 128, 128,0.5);
+    top: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+    margin: 0px;
+    width: 100%;
+    
+}
+/*הגדרות לכפתור היציאה*/
+.Exit {
+    margin-top: -44px;
+    height: 25px;
+    display: block;
+    float: right;
+    margin-right: 20px;
+    outline: none;
+}
+
+#backWOsaving {
+    background-color: rgba(128, 128, 128,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*הגדרות לחלון הפופ-אפ*/
+.PopUp {
+    position: absolute;
+    width: 362px;
+    background-color: white;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 286px;
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border: 0px none #000000;
+    padding-top: 73px;
+}
+
+.PopUpImg {
+    position: absolute;
+    width: 362px;
+    background-color: white;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 326px;
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border: 0px none #000000;
+    padding-top: 48px;
+    height: 254px;
+}
+
+/*פופ אפ מחיקה*/
+#DeleteConfPopUp {
+    height: 199px;
+}
+
+#OkBtn {
+    float: right;
+    /* margin-top: 54px; */
+    margin-right: 60px;
+    margin-bottom: -40px;
+}
+
+
+#dontDel {
+    float: left;
+    margin-bottom: -5px;
+    margin-left: 62px;
+}
+
+
+
+/*הגדרות לתמונה*/
+#BigImage {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+#picToDel {
+    height: 150px;
+    /* float: left; */
+    margin-left: 14px;
+    margin-top: -32px;
+    margin-bottom: -5px;
+    padding-right: 8px;
+}
+
+/*קובץ תמונה לא נכון*/
+#wrongFileMsgPanel {
+    height: 91px;
+    width: 395px;
+    padding-top: 56px;
+}
+
+
+
+/*לא ניתן ליצור משחק בלי תוכן*/
+
+#noContent {
+    width: 457px;
+    height: 100px;
+}
+#cancelBTN {
+    margin-left: 121px;
+    margin-bottom: -21px;
+    /* margin-top: 54px; */
+    float: left;
+    width: 69px;
+    height: 26px;
+}
+
+#confirmBTN {
+    width: 69px;
+    height: 26px;
+}
+
+
+/*לא ניתן לשמור בלי תוכן*/
+
+#cantSave {
+    padding-top: 54px;
+    height: 100px;
+    width: 400px;
+}
+
+#cantSavelbl {
+    position: absolute;
+    margin-top: 5px;
+    margin-right: -168px;
+    text-align: center;
+}
+
+#cantSaveExit {
+    margin-top: -36px;
+}
+
+/*עריכה בזמן עריכה*/
+#ONeditPanelMsgPanel {
+    height: 100px;
+}
+
+/*הגדלת תמונה*/
+#BigImagePopUp {
+    width: 434px;
+}
+
+#showBigImage {
+    height: 300px;
+    margin-top: -48px;
+}
+/*--------------דף עריכת משחק--------------------------------*/
+hr {
+    width: 552px;
+    /*margin-left: 41px;*/
+    margin-top: -21px;
+    float: left;
+}
+/*העלאת תמונה*/
+#FileUpload1 {
+    visibility: hidden;
+    width: 1px;
+}
+
+
+/*---------setting------------*/
+#saveBTN {
+    width: 128px;
+    margin-top: 41px;
+    margin-right: 13px;
+    position: absolute;
+}
+
+#GameNameLBL {
+    margin-top: 25px;
+    position: absolute;
+    margin-right: 13px;
+}
+
+#PubBTN {
+    width: 100px;
+    height: 25px;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    font-weight: bold;
+    border: none;
+    background-color: #0A716F;
+    color: white;
+    background-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin-top: -48px;
+    /*margin-left: 40px;*/
+    outline: none;
+}
+
+    #PubBTN:enabled:hover {
+        color: #11C1BD;
+        border-color: #11C1BD;
+        border-width: 2px;
+        border-style: solid;
+        background-color: white;
+        -webkit-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        -moz-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: -48px;
+        /*margin-left: 40px;*/
+        outline: none;
+    }
+
+    #PubBTN:active {
+        color: white;
+        background-color: #11C1BD;
+        -webkit-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        -moz-box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        border-radius: 6px;
+        box-shadow: 2px 8px 17px 1px rgba(0,0,0,0.14);
+        cursor: pointer;
+        margin-top: -48px;
+        /*margin-left: 40px;*/
+        outline: none;
+    }
+
+    #PubBTN:disabled {
+        background-color: #11C1BD;
+        color: white;
+        cursor: not-allowed;
+        opacity: 0.4;
+        margin-top: -48px;
+        /*margin-left: 40px;*/
+        outline: none;
+    }
+
+
+#backToGames {
+    width: 150px;
+    margin-top: -25px;
+    margin-bottom: 19px;
+}
+
+#pubTermsPanel {
+    display: inline-block;
+    float: left;
+    margin-left: 107px;
+    margin-top: -42px;
+}
+
+
+/*גרידים פנימיים*/
+
+#trueAnsHeadlinePanel {
+    background-color: #66CCFF;
+    width: 589px;
+    text-align: center;
+    margin-bottom: -19px;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 0px solid #000000;
+    padding-bottom: 2px;
+    padding-top: 0px;
+    margin-top: -54px;
+    height:20px;
+}
+#gridTrueDiv {
+    max-height: 234px;
+    width: 589px;
+    overflow-y: scroll;
+    direction: ltr;
+    position: absolute;
+    margin-top: -32px;
+}
+tbody tr th{
+   
+}
+.FixedHeader {
+    position: relative;
+    top: expression(this.offsetParent.scrollTop);
+}
+
+#GridViewTrueAns {
+    direction: rtl;
+    border-right: none;
+    border-top: none;
+}
+
+
+    #GridViewTrueAns th:nth-child(1) {
+        border: none;
+        background-color: #9BDEFF;
+        width: 142.5px;
+    }
+
+
+
+    #GridViewTrueAns th:nth-child(2) {
+        border: none;
+        background-color: #9BDEFF;
+        width: 219.5px;
+    }
+    #GridViewTrueAns th:nth-child(3) {
+        border: none;
+        background-color: #9BDEFF;
+        width: 142.5px;
+    }
+
+    #GridViewTrueAns th:nth-child(4) {
+        border: none;
+        background-color: #9BDEFF;
+        width: 66.5px;
+        text-align: right;
+    }
+    #GridViewTrueAns td {
+        vertical-align: middle;
+        align-items: center;
+        border: none;
+        align-content: center;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
+    }
+
+        #GridViewTrueAns td:first-child {
+            border: none;
+            border-bottom: 1px solid black;
+            text-align: right;
+            width:310px;
+            padding-top:8px;
+
+        }
+
+#changeTrueAns{
+    width:307px;
+}
+
+#MAXChartyp {
+    color: Red;
+    position: absolute;
+    margin-right: 501px;
+    margin-top: -79px;
+    font-weight: bold;
+}
+
+#noTrueAns {
+    color: lightslategray;
+    background-color: lightgray;
+    margin-top: -32px;
+    text-align: center;
+    padding-right: 227px;
+    padding-left: 227px;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 0px solid #000000;
+    position: absolute;
+}
+
+#noFalseAns {
+    color: lightslategray;
+    background-color: lightgray;
+    margin-top: -28px;
+    text-align: center;
+    /* padding-right: 335px; */
+    /* padding-left: 197px; */
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 0px solid #000000;
+    float: left;
+    margin-right: 692px;
+    position: absolute;
+    height: 20px;
+    width: 594px;
+}
+
+
+#gridFalseDiv {
+    max-height: 234px;
+    width: 589px;
+    overflow-y: scroll;
+    direction: ltr;
+    float: left;
+    margin-top: -48px;
+    position: absolute;
+    margin-right: 691px;
+}
+
+
+#falseAnsHeadlinePanel {
+    background-color: #66CCFF;
+    width: 589px;
+    text-align: center;
+    margin-bottom: -19px;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 0px solid #000000;
+    padding-bottom: 2px;
+    padding-top: 0px;
+    float: left;
+    margin-top: -50px;
+    position: absolute;
+    margin-right: 691px;
+    height: 20px;
+}
+
+
+#GridViewFalseAns {
+    direction: rtl;
+    border-right: none;
+    border-top: none;
+}
+
+
+    #GridViewFalseAns th {
+        border: none;
+        background-color: #9BDEFF;
+    }
+
+    #GridViewFalseAns td {
+        vertical-align: middle;
+        align-items: center;
+        border: none;
+        align-content: center;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
+    }
+
+        #GridViewFalseAns td:first-child {
+            border: none;
+            border-bottom: 1px solid black;
+            text-align: right;
+            width: 310px;
+        }
+
+        /*-----------------------------*/
+    #GridViewFalseAns th:nth-child(1) {
+        border: none;
+        background-color: #9BDEFF;
+        width: 142.5px;
+    }
+
+
+
+    #GridViewFalseAns th:nth-child(2) {
+        border: none;
+        background-color: #9BDEFF;
+        width: 219.5px;
+    }
+
+    #GridViewFalseAns th:nth-child(3) {
+        border: none;
+        background-color: #9BDEFF;
+        width: 142.5px;
+    }
+
+    #GridViewFalseAns th:nth-child(4) {
+        border: none;
+        background-color: #9BDEFF;
+        width: 66.5px;
+        text-align: right;
+    }
+
+
+/*#GridViewFalseAns_FeditPancilBtn_0 {
+    padding-top: 23px;
+}
+
+#GridViewFalseAns_editFalsePic_0 {
+    padding-top: 23px;
+}
+
+#GridViewFalseAns_cancelPicFalseAnsChange_0 {
+    padding-top: 23px;
+}
+
+#GridViewFalseAnss_cancelFalseAnsChange_0 {
+    margin-top: 28px;
+}
+
+#GridViewFalseAns_approveFalsePicChange_0 {
+    padding-top: 23px;
+}
+
+
+#GridViewFalseAns_changeFalseAns_0 {
+    margin-top: 29px;
+}
+
+#GridViewFalseAns_FbigPicBtn_0 {
+    padding-top: 23px;
+}
+
+#GridViewFalseAns_FremoveAns_0 {
+    padding-top: 23px;
+}*/
+
+        /*-------------------------------------------------*/
+#changeFalseAns {
+    width: 307px;
+}
+
+/*.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.box {
+    background-color: #e2e2de;
+    border-radius: 3px;
+    padding: 10px 63px;
+}*/
+
+
+/*צבעים/ שינוי צבעים*/
+.allowPub {
+    color: red;
+}
+
+#tooMuchgameName {
+    position: absolute;
+    margin-right: -5px;
+    margin-top: 48px;
+    width: 227px;
+    color: red;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+#tooMuchgameDir {
+    position: absolute;
+    margin-right: 147px;
+    margin-top: -20px;
+    width: 227px;
+    color: red;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+#tooMuchPlayerFB {
+    position: absolute;
+    margin-top: 16px;
+    margin-right: 144px;
+    width: 227px;
+    color: red;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+#tooMuchAddAns {
+    color: red;
+    font-size: smaller;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -19px;
+    margin-right: 28px;
+}
+/*ספירת תווים*/
+.countChar {
+    background-color: #DAE3F3;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 0px solid #000000;
+    display: block;
+    height: 23px;
+    width: 55px;
+    padding: -2px 1px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#gameNameLimitChar {
+    margin-right: 226px;
+    margin-top: 25px;
+}
+#gameNameInfo {
+    position: absolute;
+    margin-top: 12px;
+}
+
+#gameDirLimitChar {
+    margin-right: 370px;
+}
+
+#FBKLimitChar {
+    margin-right: 397px;
+    margin-top: -5px;
+    position: absolute;
+}
+
+
+/*הסתרת דברים*/
+.hidden {
+    display: none;
+}
+
+/*פרייוו של התמונה לפני הוספתה לגריד*/
+#showMeTheImg {
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+}
+/*שינוי צבע ללייבילים שסופרים את כמות התווים*/
+.countCharGreen {
+    color: forestgreen;
+    background-color: #DAE3F3;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    display: block;
+    height: 19px;
+    width: 55px;
+    padding: -2px 1px;
+    text-align: center;
+    border: 1px solid green;
+    padding-top: 2px;
+}
+
+.countCharRed {
+    color: red;
+    background-color: #DAE3F3;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    display: block;
+    height: 19px;
+    width: 55px;
+    padding: -2px 1px;
+    text-align: center;
+    border: 1px solid red;
+    padding-top: 2px;
+}
+
+/*שינוי צבעים לתנאי פרסום*/
+.notEanoghChar {
+    color: red;
+}
+
+.EanoghChar {
+    color: green;
+}
+
+/*טולטיפ*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 180px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+    }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -20px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+.toolTipDir {
+    position: relative;
+    display: inline-block;
+}
+
+    .toolTipDir .toolTipDirText {
+        visibility: hidden;
+        width: 197px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 40%;
+        left: 50%;
+        margin-left: -90px;
+        margin-bottom: 19px;
+    }
+
+.toolTipDir:hover .toolTipDirText {
+    visibility: visible;
+}
+.toolTipDir .toolTipDirText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.toolTipName {
+    position: relative;
+    display: inline-block;
+}
+
+    .toolTipName .toolTipNameText {
+        visibility: hidden;
+        width: 147px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 40%;
+        left: 50%;
+        margin-left: -73px;
+        margin-bottom: -5px;
+       
+    }
+
+    .toolTipName:hover .toolTipNameText {
+        visibility: visible;
+    }
+    .toolTipName .toolTipNameText::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -20px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+    }
+
+
+
+/*----הגדרות----*/
+#setting {
+    width: 589px;
+    position: absolute;
+    background-color: #66ccff;
+    margin-top: 33px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 0px solid #000000;
+    padding-bottom:3px;
+    padding-top:3px;
+}
+#settingLbl {
+    padding-right: 8px;
+}
+#settingContent {
+    margin-top: 51px;
+    background-color: #caf5ff;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    width: 589px;
+    height: 285px;
+    margin-bottom: 20px;
+}
+
+#gameNameTXT {
+    background-color: transparent;
+    border-width: 1px;
+    position: absolute;
+    margin-right: 99px;
+    margin-top: 25px;
+    width: 167px;
+}
+#gameDirTXT {
+    background-color: transparent;
+    border-width: 1px;
+    margin-right: 212px;
+    width: 189px;
+}
+
+#gameDirTwo {
+    margin-right: 0px;
+}
+#dirInfo {
+    margin-top: -13px;
+    margin-right: -1px;
+}
+#gameDirLBL {
+    position: absolute;
+    margin-right: 13px;
+}
+#FbkLBL {
+    margin-top: -6px;
+    margin-right: 32px;
+    position: absolute;
+}
+
+#fbForPlayerLbl {
+    margin-right: 118px;
+    margin-top: -5px;
+    position: absolute;
+}
+
+
+#FbkTxt {
+    background-color: transparent;
+    border-width: 1px;
+    margin-right: 109px;
+    margin-top: -5px;
+    position: absolute;
+    height: 16px;
+    width: 320px;
+}
+
+
+#editFB {
+    margin-top: -11px;
+    float: left;
+    position: absolute;
+    margin-right: -18px;
+}
+
+
+/*-----הוספת מסיחים-----*/
+
+#addTXTlbl {
+    padding-right: 75px;
+    margin-top: 43px;
+    position: absolute;
+}
+#addPicLBL {
+    padding-right: 21px;
+    margin-top: 44px;
+    position: absolute;
+}
+#addTxtBTN {
+    height: 75px;
+    width: 74px;
+    margin-right: 87px;
+    outline: none;
+    position:absolute;
+}
+#orLbl {
+    margin-top: 25px;
+    display: inline-block;
+    float: right;
+    margin-right: 78px;
+    position: absolute;
+}
+#addPicBTN {
+    
+    outline: none;
+    padding-left: 10px;
+    position: absolute;
+}
+
+/*-----------פאנל הוספת מסיח טקסט-----------*/
+#panelTxt {
+    height: 124px;
+    width: 373px;
+    float: left;
+    margin-right: 226px;
+    margin-top: -155px;
+    position: absolute;
+}
+#removeTextAns {
+    margin-right: -33px;
+    margin-top: 20px;
+    float: right;
+}
+#TextIfCorrectCBK {
+    float: left;
+    margin-left: -90px;
+    margin-top: -118px;
+}
+#addTxtAnsBtn {
+    float: left;
+    margin-top: -126px;
+    margin-left: -198px;
+}
+#textAnsLimitChar {
+    margin-right: 256px;
+}
+
+/*#GridViewTrueAns_TeditPancilBtn_0{
+    padding-top:23px;
+}*/
+
+tbody tr {
+   
+    position: relative;
+}
+
+th {
+    position: sticky;
+    top: 0;
+}
+
+table {
+    position: relative;
+}
+
+/*ns_approveTruePicChange_0 {
+    padding-top: 23px;
+}#GridViewTrueAns_editTruePic_0 {
+    padding-top: 23px;
+}
+
+#GridViewTrueAns_cancelPicTrueAnsChange_0 {
+    padding-top: 23px;
+}
+
+#GridViewTrueAns_cancelTrueAnsChange_0 {
+    margin-top: 28px;
+}
+
+
+
+
+#GridViewTrueAns_changeTrueAns_0 {
+    margin-top: 29px;
+}
+
+#GridViewTrueAns_TbigPicBtn_0 {
+    padding-top: 23px;
+}
+#GridViewTrueAns_TremoveAns_0 {
+    padding-top: 23px;
+}*/
+
+
+/*--------פאנל הוספת מסיח תמונה---------*/
+#panelPic {
+    height: 124px;
+    width: 373px;
+    float: left;
+    margin-right: 227px;
+    margin-top: -147px;
+    position: absolute;
+}
+
+#removePicAns {
+    margin-right: -33px;
+    margin-top: 80px;
+    float: right;
+    position:absolute;
+}
+
+#PicIfCorrectCBK {
+    float: left;
+    margin-right: 132px;
+    margin-top: -42px;
+    position: absolute;
+    width: 141px;
+}
+
+#addPicAnsBTN {
+    float: left;
+    margin-top: -54px;
+    margin-right: 289px;
+    position: absolute;
+}
+#showMeTheImg {
+    width: auto;
+    max-width: 125px;
+    margin-top: 38px;
+    height: auto;
+    margin-bottom: -17px;
+    position:absolute;
+}
+::-webkit-scrollbar {
+    width: 9px;
+}
+/*------גלילה------------*/
+
+/*/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0A716F;
+    border-radius: 4px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #096361;
+    }
+
