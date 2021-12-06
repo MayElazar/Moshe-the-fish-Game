@@ -7,11 +7,11 @@ The target audience is children at elementary school age.
 
 
 The Technolegy we used:
-C#
-.net
-JS
-Html
-Css
+C#,
+Asp.Net,
+JS,
+Html,
+Css,
 Adobe Animate CC - ActionScript.
 
 I build and design It with my peers - Ori Allon, Liat Ben-Yosef.
