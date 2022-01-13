@@ -16,3 +16,8 @@ Adobe Animate CC - ActionScript.
 
 I build and design It with my peers - Ori Allon, Liat Ben-Yosef.
 
+## front-end:
+The front-end was built with JS, Html, Css, Adobe Animate CC - ActionScript.
+
+![image](https://user-images.githubusercontent.com/24205331/149292771-cef7f59e-6043-484b-b65b-1ce1b683e3fb.png)
+
